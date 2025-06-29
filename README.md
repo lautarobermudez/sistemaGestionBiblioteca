@@ -27,8 +27,10 @@ Este es un sistema interactivo de gestión de biblioteca desarrollado con HTML, 
 
 ```
 ├── index.html         # Página principal
-├── styles.css         # Estilos de la interfaz
-├── app.js             # Lógica de la aplicación
+├── styles/
+│   └── styles.css     # Estilos de la interfaz
+├── scripts/
+│   └── app.js         # Lógica de la aplicación
 ```
 
 ## Capturas de pantalla
