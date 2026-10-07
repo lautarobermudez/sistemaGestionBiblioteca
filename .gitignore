@@ -1,0 +1,10 @@
+# Windows download metadata
+*:Zone.Identifier
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Dependencies
+node_modules/

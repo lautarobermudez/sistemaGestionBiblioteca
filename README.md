@@ -1,49 +1,27 @@
-# Sistema de Gestión de Biblioteca
+# Library Management System
 
-Este es un sistema interactivo de gestión de biblioteca desarrollado con HTML, CSS y JavaScript puro. Permite registrar préstamos de libros, procesar devoluciones, ver estadísticas y consultar los préstamos activos. Es ideal para practicar lógica de programación, manejo de formularios y almacenamiento local en el navegador.
+A library loan manager in **HTML, CSS and vanilla JavaScript**. It registers book loans, processes returns, calculates late fees and shows daily statistics. Data is saved in the browser with `localStorage`.
 
-## Características
+Practice project for the JavaScript course (functions, arrays, objects, forms, `localStorage`).
 
-- Registrar nuevos préstamos de libros.
-- Procesar devoluciones y calcular multas por retraso.
-- Visualizar estadísticas del día (préstamos, devoluciones, multas, etc.).
-- Consultar la lista de préstamos activos.
-- Interfaz moderna, responsive y fácil de usar.
-- Los datos se guardan en el navegador (localStorage), por lo que no se pierden al recargar la página.
+## Features
+- Register loans with a due date.
+- Process returns and calculate late fees.
+- Daily statistics (loans, returns, fees).
+- List of active loans.
 
-## Tecnologías utilizadas
+## Run it locally
+No build step: clone the repo and open `index.html` in a browser.
 
-- HTML5
-- CSS3 (diseño responsive y moderno)
-- JavaScript (sin frameworks)
-
-## Cómo usar
-
-1. Descarga o clona este repositorio.
-2. Abre el archivo `index.html` en tu navegador favorito.
-3. ¡Listo! Puedes comenzar a registrar préstamos y gestionar la biblioteca.
-
-## Estructura de carpetas
-
+## Structure
 ```
-├── index.html         # Página principal
-├── styles/
-│   └── styles.css     # Estilos de la interfaz
-├── scripts/
-│   └── app.js         # Lógica de la aplicación
+index.html
+styles/styles.css
+scripts/app.js                 # browser version (used by index.html)
+scripts/gestionBiblioteca.js   # earlier console version for Node (readline)
 ```
 
-## Capturas de pantalla
-
-> Puedes agregar aquí imágenes de la interfaz para mostrar cómo luce tu sistema.
-
-## Despliegue
-
-Puedes subir este proyecto a plataformas como Vercel, Netlify o GitHub Pages para mostrarlo en tu portafolio.
-
-## Autor
-
-Desarrollado por Lautaro Bermudez - 2025
-
----
-¡Si te gustó este proyecto, no dudes en dejar una estrella en el repositorio!
+## Known limitations / next steps
+- No backend: data is only stored in the browser.
+- Two versions of the logic coexist (console and browser); they should share one module.
+- No tests.
